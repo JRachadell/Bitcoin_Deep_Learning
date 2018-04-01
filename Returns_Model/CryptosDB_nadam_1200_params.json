@@ -1,1 +1,0 @@
-{"metrics": ["loss"], "samples": 2689, "batch_size": 50, "epochs": 1200, "steps": null, "do_validation": false, "verbose": 2}
