@@ -73,17 +73,17 @@ Returns = list(dff['Returns'])
 Prediction = list(dff['Predictions'])
 
 for i in range(len(dff)):
-    if Returns[i] > 0.05:
+    if Returns[i] > 0.03:
         rets.append("Higher")
-    elif 0.05 >= Returns[i] >= -0.05:
+    elif 0.03 >= Returns[i] >= -0.03:
         rets.append("Neutral")
-    elif -0.05 > Returns[i]:
+    elif -0.03 > Returns[i]:
         rets.append("Lower")
-    if Prediction[i] > 0.05:
+    if Prediction[i] > 0.03:
         pred_rets.append("Higher")
-    elif 0.05 >= Prediction[i] >= -0.05:
+    elif 0.03 >= Prediction[i] >= -0.03:
         pred_rets.append("Neutral")
-    elif -0.05 > Prediction[i]:
+    elif -0.03 > Prediction[i]:
         pred_rets.append("Lower")
 
 for i in range(len(dff)):
